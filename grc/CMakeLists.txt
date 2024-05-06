@@ -18,8 +18,15 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    lora_demod.xml
-    lora_decode.xml
-    lora_mod.xml
-    lora_encode.xml DESTINATION share/gnuradio/grc/blocks
+    lora_controller.block.yml
+    lora_receiver.block.yml
+    lora_message_file_sink.block.yml
+    lora_message_socket_sink.block.yml
+    lora_message_socket_source.block.yml DESTINATION share/gnuradio/grc/blocks
 )
+
+if(HAS_MONGODB)
+    install(FILES
+        lora_message_mongodb_sink.block.yml DESTINATION share/gnuradio/grc/blocks
+    )
+endif(HAS_MONGODB)

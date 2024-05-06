@@ -22,8 +22,14 @@
 ########################################################################
 install(FILES
     api.h
-    demod.h
-    decode.h
-    mod.h
-    encode.h DESTINATION include/lora
+    decoder.h
+    message_file_sink.h
+    message_socket_sink.h
+    channelizer.h
+    debugger.h
+    loratap.h
+    loraphy.h
+    utilities.h
+    controller.h
+    message_socket_source.h DESTINATION include/lora
 )

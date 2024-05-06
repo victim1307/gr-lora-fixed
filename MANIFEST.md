@@ -1,16 +1,18 @@
-title: LoRa OOT Module
-brief: An open source implementation of the LoRa CSS PHY
+title: The LORA OOT Module
+brief: GNU Radio blocks for receiving LoRa modulated radio messages using SDR
 tags: # Tags are arbitrary, but look at CGRAN what other authors are using
-  - LoRa
-  - chirp
-  - css
   - sdr
+  - lora
+  - receiving
+  - decoding
 author:
-  - Matt Knight <matt@bastille.net>
+  - Pieter Robyns <pieter.robyns (<at>) uhasselt.be>
+  - Eduard Marin <eduard.marin (<at>) esat.kuleuven.be>
 copyright_owner:
-  - Bastille Networks, Inc.
-license:
-#repo: http://github.com/BastilleResearch/gr-lora
+  - All contributors have copyright over their respective code contributions
+license: GNU GENERAL PUBLIC LICENSE Version 3
+gr_supported_version: 3.9
+repo: https://github.com/rpp0/gr-lora
 #website: <module_website> # If you have a separate project website, put it here
 #icon: <icon_url> # Put a URL to a square image here that will be used as an icon on CGRAN
 ---
